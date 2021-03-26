@@ -4,6 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
         <!-- Bootstrap CSS -->
         <link
@@ -15,12 +16,12 @@
 
         <title>나의 기업인재상</title>
         <link rel="stylesheet" href="style.css" />
-        
-        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-605e01596f4269bb"></script>
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script
+            type="text/javascript"
+            src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-605e01596f4269bb"
+        ></script>
     </head>
 
     <body>
@@ -37,6 +38,7 @@
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
@@ -58,15 +60,30 @@
                     </li>
                 </ul>
             </div>
+            <div class="ad-banner-3">
+                <ins
+                    class="kakao_ad_area"
+                    style="display: none;"
+                    data-ad-unit="DAN-LiC5pYDF1ALvF9IN"
+                    data-ad-width="320"
+                    data-ad-height="50"
+                ></ins>
+                <script
+                    type="text/javascript"
+                    src="//t1.daumcdn.net/kas/static/ba.min.js"
+                    async
+                ></script>
+            </div>
         </nav>
         <section class="section">
             <h1 class="title">머신러닝기반의 기업인재상 테스트</h1>
             <h2 class="subtitle">나는 어떤 기업의 얼굴일까?</h2>
-        </section>
         
-        1400장의 사진을 학습하여 기업의 인재상을 알려드립니다.
 
-        <div>나는 어느기업 인재상</div>
+        1400장의 사진을 학습하여 기업의 인재상을 알려드립니다.
+            </section>
+
+        <div>사진은 서버에 저장되지 않습니다. 안심하시고 즐기세요.</div>
         <!-- <button type="button" onclick="init()">시작</button>-->
         <!--<button type="button" onclick="predict()">결과</button>-->
         <script
@@ -93,21 +110,62 @@
                     <h3 class="upload-text">사진을 눌러서 업로드하세요!.</h3>
                 </div>
             </div>
+            <ins
+                class="kakao_ad_area"
+                style="display: none;"
+                data-ad-unit="DAN-LTPZXCznegvIfPaV"
+                data-ad-width="160"
+                data-ad-height="600"
+            ></ins>
+
             <div class="file-upload-content">
                 <img class="file-upload-image" id="face-image" src="#" alt="your image" />
                 <p class="result-message"></p>
                 <div id="label-container"></div>
                 <div class="image-title-wrap">
-                    
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="addthis_inline_share_toolbox"></div>
-            
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <div class="addthis_inline_share_toolbox"></div>
+
                     <button type="button" onclick="removeUpload()" class="remove-image">
                         다른사진으로 시도하기 <span class="image-title">Uploaded Image</span>
                     </button>
                 </div>
             </div>
         </div>
+        <div class="ad-banner">
+            <ins
+                class="kakao_ad_area"
+                style="display: none;"
+                data-ad-unit="DAN-deT6maYp1CDC3Hji"
+                data-ad-width="320"
+                data-ad-height="100"
+            ></ins>
+        </div>
+        <div class="ad-banner-2">
+            <ins
+                class="kakao_ad_area"
+                style="display: none;"
+                data-ad-unit="DAN-l223K0se8i313Q56"
+                data-ad-width="320"
+                data-ad-height="50"
+            ></ins>
+        </div>
+
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        <footer class="footer pt-5 container d-flex justify-content-center">
+            <div>
+                <p>
+                    &copy; 오유미 2021. All Rights Reserved.
+                </p>
+                <p>
+                    당신들의 합격을 기원합니다.
+                </p>
+            </div>
+        </footer>
+
         <div id="webcam-container"></div>
 
         <!-- Optional JavaScript -->
@@ -243,7 +301,8 @@
 
                         break;
                     case '두산':
-                        resultMessage = '포용심을 겸비한 리더의 모습을 한 당신 두산의 인재상이군요!';
+                        resultMessage =
+                            '포용심을 겸비한 리더의 모습을 한 당신 두산의 인재상이군요!';
                         break;
                     case '디스커버리':
                         resultMessage = '세상을 즐길 줄 아는 당신 디스커버리의 인재상이군요!';
@@ -270,7 +329,8 @@
                             '청량함과 시원함을 모두 가지고 있는 당신 칠성의 인재상이군요!';
                         break;
                     case '코닥':
-                        resultMessage = '순수함과 능숙함을 표현할 줄 아는 당신 코닥의 인재상이군요!';
+                        resultMessage =
+                            '순수함과 능숙함을 표현할 줄 아는 당신 코닥의 인재상이군요!';
                         break;
                     case '톰포드':
                         resultMessage = '시크함과 부드러움을 넘나드는 당신 TOMFORD의 인재상이군요!';
@@ -280,7 +340,8 @@
 
                         break;
                     case '현대':
-                        resultMessage = '유연함을 겸비하고 스스로 도전하는 당신 현대의 인재상인구요!';
+                        resultMessage =
+                            '유연함을 겸비하고 스스로 도전하는 당신 현대의 인재상인구요!';
 
                         break;
                     case 'KAKAO':
@@ -288,109 +349,107 @@
                             '사람들의 행복과 안신처역할을 도맡는 당신 카카오의 인재상이군요!';
                         break;
                     default:
-                        resultMessage = "당신의 기업은 창업 중입니다!"
+                        resultMessage = '당신의 기업은 창업 중입니다!';
                 }
                 $('.result-message').html(resultMessage);
 
-               /* for (let i = 0; i < maxPredictions; i++) {
+                /* for (let i = 0; i < maxPredictions; i++) {
                     const classPrediction =
                         prediction[i].className + ': ' + prediction[i].probability.toFixed(2);
                     labelContainer.childNodes[i].innerHTML = classPrediction;
                 }
             }*/
                 for (let i = 0; i < maxPredictions; i++) {
-                if (prediction[i].probability.toFixed(2) > 0.1) {
-                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
-                } else if (prediction[i].probability.toFixed(2) >= 0.01) {
-                    barWidth = "4%"
-                } else {
-                    barWidth = "2%"
+                    if (prediction[i].probability.toFixed(2) > 0.1) {
+                        barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + '%';
+                    } else if (prediction[i].probability.toFixed(2) >= 0.01) {
+                        barWidth = '4%';
+                    } else {
+                        barWidth = '2%';
+                    }
+                    var labelTitle;
+                    switch (prediction[i].className) {
+                        case 'SAMSUNG':
+                            labelTitle = '삼성';
+
+                            break;
+                        case 'K2':
+                            labelTitle = 'K2!';
+
+                            break;
+                        case '나이키':
+                            labelTitle = '나이키!';
+
+                            break;
+                        case '대림':
+                            labelTitle = '대림!';
+
+                            break;
+                        case '두산':
+                            labelTitle = '두산!';
+                            break;
+                        case '디스커버리':
+                            labelTitle = '디스커버리!';
+                            break;
+                        case '아디다스':
+                            labelTitle = '아디다스!';
+
+                            break;
+                        case '아이더':
+                            labelTitle = '아이더!';
+
+                            break;
+                        case '오뚜기':
+                            labelTitle = '오뚜기!';
+
+                            break;
+                        case '와이드앵글':
+                            labelTitle = '와이드앵글!';
+
+                            break;
+                        case '칠성':
+                            labelTitle = '칠성!';
+                            break;
+                        case '코닥':
+                            labelTitle = '코닥!';
+                            break;
+                        case '톰포드':
+                            labelTitle = '톰포드!';
+                            break;
+                        case '한화생명':
+                            labelTitle = '한화생명!';
+
+                            break;
+                        case '현대':
+                            labelTitle = '현대!';
+
+                            break;
+                        case 'KAKAO':
+                            labelTitle = '카카오!';
+                            break;
+                        default:
+                            labelTitle = '당신의 기업은 창업 중입니다!';
+                    }
+                    var label =
+                        "<div class='animal-label d-flex align-items-center'>" +
+                        labelTitle +
+                        '</div>';
+                    var bar =
+                        "<div class='bar-container position-relative container'><div class='" +
+                        prediction[i].className +
+                        "-box'></div><div class='d-flex justify-content-center align-items-center " +
+                        prediction[i].className +
+                        "-bar' style='width: " +
+                        barWidth +
+                        "'><span class='d-block percent-text'>" +
+                        Math.round(prediction[i].probability.toFixed(2) * 100) +
+                        '%</span></div></div>';
+                    labelContainer.childNodes[i].innerHTML = label + bar;
                 }
-                var labelTitle;
-                switch (prediction[i].className) {
-                    case 'SAMSUNG':
-                        labelTitle = '삼성';
-
-                        break;
-                   case 'K2':
-                        labelTitle = 'K2!';
-
-                        break;
-                    case '나이키':
-                        labelTitle = '나이키!';
-
-                        break;
-                    case '대림':
-                        labelTitle = '대림!';
-
-                        break;
-                    case '두산':
-                        labelTitle = '두산!';
-                        break;
-                    case '디스커버리':
-                        labelTitle = '디스커버리!';
-                        break;
-                    case '아디다스':
-                        labelTitle = '아디다스!';
-
-                        break;
-                    case '아이더':
-                        labelTitle =
-                            '아이더!';
-
-                        break;
-                    case '오뚜기':
-                        labelTitle = '오뚜기!';
-
-                        break;
-                    case '와이드앵글':
-                        labelTitle = '와이드앵글!';
-
-                        break;
-                    case '칠성':
-                        labelTitle =
-                            '칠성!';
-                        break;
-                    case '코닥':
-                        labelTitle = '코닥!';
-                        break;
-                    case '톰포드':
-                        labelTitle = '톰포드!';
-                        break;
-                    case '한화생명':
-                        labelTitle = '한화생명!';
-
-                        break;
-                    case '현대':
-                        labelTitle =
-                            '현대!';
-
-                        break;
-                    case 'KAKAO':
-                        labelTitle =
-                            '카카오!';
-                        break;
-                    default:
-                        labelTitle = '당신의 기업은 창업 중입니다!';
-                }
-                var label = "<div class='animal-label d-flex align-items-center'>" + labelTitle + "</div>"
-                var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
-                labelContainer.childNodes[i].innerHTML = label + bar;
             }
-        }          
-                
-                
-                
         </script>
     </body>
-    
-    
-    
-    
-    
-    
-    
-    
+
     <!--Copyright (c) 2021 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

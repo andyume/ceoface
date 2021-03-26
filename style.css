@@ -373,13 +373,27 @@ body {
     background-color:rgba(117, 204, 84, 1);
 }
 
-.justify-content-center {
-    justify-content: center!important;
-    background-color: #007bff;
-}
+
 
 .percent-text {
     color : #fff;
     
 }
-
+.ad-banner {
+    width: 320px;
+    margin: 0 auto;
+}
+.ad-banner-2 {
+    width: 320px;
+    margin: 0 auto;
+}
+.ad-banner-3 {
+    width: 320px;
+    
+}
+.justify-content-center {
+    justify-content: center!important;
+    width: 20rem;
+    height: 2.5rem;
+    background-color: #ffffff;
+}
