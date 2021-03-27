@@ -124,12 +124,18 @@
                     
                     
                     
-                    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                <!--<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>-->
                     
+                                    <div id="loading" class="animated bounce">
+                <div class="lds-ellipsis"> <div></div><div></div><div></div><div></div> 
+                    <span class="sr-only"></span>
+                </div>
+                <p class="text-center">AI가 당신의 얼굴을 학습 중입니다.</p>
+            </div>
                     
                     <div class="addthis_inline_share_toolbox"></div>
                                               
-                        
+        
                    
 
                     <button type="button" onclick="removeUpload()" class="remove-image">
@@ -241,6 +247,8 @@
 
                     reader.onload = function (e) {
                         $('.image-upload-wrap').hide();
+                        $('#loading').show();
+
 
                         $('.file-upload-image').attr('src', e.target.result);
                         $('.file-upload-content').show();
@@ -252,6 +260,7 @@
                     init().then(() => {
                         console.log('hello');
                         predict();
+                         $('#loading').hide();
                     });
                 } else {
                     removeUpload();
