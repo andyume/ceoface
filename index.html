@@ -111,9 +111,6 @@
                     <h3 class="upload-text">사진을 눌러서 업로드하세요!.</h3>
                 </div>
             </div>
-            
-            
-            
 
             <div class="file-upload-content">
                 <img class="file-upload-image" id="face-image" src="#" alt="your image" />
@@ -121,29 +118,26 @@
                 <div id="label-container"></div>
                 <div class="image-title-wrap">
                     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                    
-                    
-                    
-                <!--<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>-->
-                    
-                                    <div id="loading" class="animated bounce">
-                <div class="lds-ellipsis"> <div></div><div></div><div></div><div></div> 
-                    <span class="sr-only"></span>
-                </div>
-                <p class="text-center">AI가 당신의 얼굴을 학습 중입니다.</p>
-            </div>
-                    
+
+                    <!--<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>-->
+
+                    <div id="loading" class="animated bounce">
+                        <div class="lds-ellipsis">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <span class="sr-only"></span>
+                        </div>
+                        <p class="text-center">AI가 당신의 얼굴을 학습 중입니다.</p>
+                    </div>
+
                     <div class="addthis_inline_share_toolbox"></div>
-                                              
-        
-                   
 
                     <button type="button" onclick="removeUpload()" class="remove-image">
                         다른사진으로 시도하기 <span class="image-title">Uploaded Image</span>
                     </button>
-                       
-                        
-                        
+
                     <div>
                         <ins
                             class="kakao_ad_area"
@@ -249,7 +243,6 @@
                         $('.image-upload-wrap').hide();
                         $('#loading').show();
 
-
                         $('.file-upload-image').attr('src', e.target.result);
                         $('.file-upload-content').show();
 
@@ -260,7 +253,7 @@
                     init().then(() => {
                         console.log('hello');
                         predict();
-                         $('#loading').hide();
+                        $('#loading').hide();
                     });
                 } else {
                     removeUpload();
@@ -402,7 +395,7 @@
                     var labelTitle;
                     switch (prediction[i].className) {
                         case 'SAMSUNG':
-                            labelTitle = '삼성';
+                            labelTitle = '삼성!';
 
                             break;
                         case 'K2':
@@ -462,15 +455,14 @@
                         default:
                             labelTitle = '당신의 기업은 창업 중입니다!';
                     }
-                    
-                  
-                        
+                
+
                     var label =
                         "<div class='animal-label d-flex align-items-center'>" +
-                        labelTitle + 
-                        '</div>';
-                    
-                     var bar =
+                        labelTitle +
+                        '</div>'
+
+                    var bar =
                         "<div class='bar-container position-relative container'><div class='" +
                         prediction[i].className +
                         "-box'></div><div class='d-flex justify-content-center align-items-center " +
@@ -478,12 +470,11 @@
                         "-bar' style='width: " +
                         barWidth +
                         "'><span class='d-block percent-text'>" +
-                        Math.round(prediction[i].probability.toFixed(2) * 100) + 
+                        Math.round(prediction[i].probability.toFixed(2) * 100) +
                         '%</span></div></div>';
                     /*labelContainer.childNodes[i].innerHTML = label + bar;*/
                     if (i <= 4) {
-                        labelContainer.childNodes[i].innerHTML = label + bar; 
-   
+                        labelContainer.childNodes[i].innerHTML = label + bar;
                     }
                 }
             }
