@@ -452,7 +452,10 @@
                         "'><span class='d-block percent-text'>" +
                         Math.round(prediction[i].probability.toFixed(2) * 100) +
                         '%</span></div></div>';
-                    labelContainer.childNodes[i].innerHTML = label + bar;
+                    /*labelContainer.childNodes[i].innerHTML = label + bar;*/
+                    if (i <= 4) {
+                        labelContainer.childNodes[i].innerHTML = label + bar;
+                    }
                 }
             }
         </script>
