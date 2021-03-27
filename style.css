@@ -165,12 +165,12 @@
 } */
 
 body {
-  font-family: sans-serif;
+  font-family: 'Jua', sans-serif;
   background-color: #ffffff;
 }
 
 .file-upload {
-    padding: 15% 3%;
+    padding: 13% 3%;
     margin: 0 auto;
     border-radius: 10px;
     border: solid 1.5px #f6f7fa;
@@ -251,8 +251,8 @@ body {
 }
 
 .file-upload-image {
-  max-height: 200px;
-  max-width: 200px;
+  max-height: 500px;        /*fit-content;*/
+  max-width: 310px;
   margin: auto;
   padding: 20px;
 }
@@ -332,7 +332,6 @@ body {
 
 
 
-
 .upload {
     width: 20%;
 }
@@ -351,6 +350,13 @@ body {
     font-family: NanumSquareR;
     font-size: 1.6rem;
 }
+
+
+#label-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 
 .-box{
     position: absolute;
@@ -376,6 +382,7 @@ body {
 
 
 .percent-text {
+    
     color : #fff;
     
 }
@@ -391,12 +398,22 @@ body {
     width: 320px;
     
 }
+
+.align-items-center{
+    border-radius: 10px;
+        font-size: 1.5rem;
+    
+}
+
+
+
 .justify-content-center {
     justify-content: center!important;
     width: 20rem;
     height: 2rem;
     background-color: #007bff;
 }
+
 
 
 .lds-ellipsis {
@@ -455,7 +472,21 @@ body {
   }
 }
 
+
 /*css*/
 .loading{
     display: none;
 }
+
+
+.bar-container {
+    height: 2.7rem;
+    
+}
+
+
+
+
+
+
+
