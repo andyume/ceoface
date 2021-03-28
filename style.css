@@ -381,7 +381,7 @@ body {
 }
 
 .bar-container{
-    width: 89%;
+    width: 100%;
     padding-left: 0; 
     float: right;
   background-color:#B0D7F0;
@@ -390,6 +390,32 @@ body {
     border-radius:10px;
        
 }
+
+
+
+
+.-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height :2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color:rgba(117, 204, 84, 0.2);
+    
+}
+
+.-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height :2rem;
+    border-radius: 10px;
+    /*background-color:rgba(117, 204, 84, 1);*/
+}
+
+
+
 
 
 
@@ -420,8 +446,15 @@ body {
     
 }
 .animal-label{
-     margin-top:10px;
+        margin-top: 5px;
+    background: #f6f7fa;
+    padding: 2px;
+    font-size: 1.1rem;
+    height: 2.7rem;
+    color: #002bff;
+    font-weight: bold;
 }
+
 
 
 .justify-content-center {
